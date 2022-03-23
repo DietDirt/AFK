@@ -6,13 +6,10 @@ namespace AFK
 {
     public class AFKConfigFile
     {
-        public bool afkwarp = true;
-        public bool afkkick = false;
-        public int afkwarptime = 300;
-        public int afkkicktime = 700;
+        public bool afkkick = true;
+        public int afkkicktime = 900;
         public int afkspam = 20;
-        public string awayMessage = "{player} is away from his/her keyboard and has been warped To The AFK Zone!";
-        public string returnMessage = "{player} is back from AFK! YAY!!!";
+        public string returnMessage = "{player} is back from AFK";
 
         public static AFKConfigFile Read(string path)
         {
